@@ -1,0 +1,12 @@
+<div id="image-viewer">
+    <mat-card class="shadow-md rounded-2" *ngIf = "image" >
+        <img [src]="image.url" alt="" class="mb-3">
+        <h5 class="text-dark p-1 fw-semibold fs-6">{{image.caption}} - File: {{image.url}}</h5>
+        <h6 class="p-1 fs-6 text-secondary">Size: {{image.size}}</h6>
+        <h6 class="p-1 fs-6 text-secondary">Image Category: {{image.category}}</h6>
+        <mat-card-actions>
+            <button mat-icon-button (click)="delete()"><mat-icon>delete</mat-icon></button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
